@@ -45,6 +45,7 @@ namespace KatlaSport.DataAccess.Migrations
         {
             var timestamp = DateTime.UtcNow;
             var creatorId = 1;
+            var manufacturerCode = "CodeValue";
 
             context.ProductCategories.AddOrUpdate(
                 i => i.Id,
@@ -90,7 +91,9 @@ namespace KatlaSport.DataAccess.Migrations
                     IsDeleted = false,
                     CreatedBy = creatorId,
                     LastUpdatedBy = creatorId,
-                    LastUpdated = timestamp
+                    LastUpdated = timestamp,
+                    ManufacturerCode = manufacturerCode,
+                    Price = 5
                 },
                 new CatalogueProduct
                 {
@@ -101,7 +104,9 @@ namespace KatlaSport.DataAccess.Migrations
                     IsDeleted = false,
                     CreatedBy = creatorId,
                     LastUpdatedBy = creatorId,
-                    LastUpdated = timestamp
+                    LastUpdated = timestamp,
+                    ManufacturerCode = manufacturerCode,
+                    Price = 6
                 },
                 new CatalogueProduct
                 {
@@ -112,7 +117,9 @@ namespace KatlaSport.DataAccess.Migrations
                     IsDeleted = false,
                     CreatedBy = creatorId,
                     LastUpdatedBy = creatorId,
-                    LastUpdated = timestamp
+                    LastUpdated = timestamp,
+                    ManufacturerCode = manufacturerCode,
+                    Price = 7
                 },
                 new CatalogueProduct
                 {
@@ -123,7 +130,9 @@ namespace KatlaSport.DataAccess.Migrations
                     IsDeleted = false,
                     CreatedBy = creatorId,
                     LastUpdatedBy = creatorId,
-                    LastUpdated = timestamp
+                    LastUpdated = timestamp,
+                    ManufacturerCode = manufacturerCode,
+                    Price = 8
                 });
 
             context.StoreHives.AddOrUpdate(
